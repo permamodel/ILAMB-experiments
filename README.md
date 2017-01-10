@@ -8,7 +8,7 @@ try
 
 ```bash
 $ qsub -q debug -l pmem=16gb \
-> -v parameter_file=/path/to/ILAMB_PARA_SETUP.MsTMIP-le-All \
+> -v parameter_file='/path/to/ILAMB_PARA_SETUP.MsTMIP-le-All' \
 > /home/csdms/tools/ILAMB/CODES/run_ilamb.sh -m ae -M <your-email>
 ```
 
