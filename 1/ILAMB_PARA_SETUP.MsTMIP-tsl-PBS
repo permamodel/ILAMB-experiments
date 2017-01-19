@@ -16,7 +16,6 @@ TEM6          |      1     |    1   |  historical  |
 TRIPLEX-GHG   |      1     |    1   |  historical  |
 VEGAS2.1      |      1     |    1   |  historical  |
 VISIT         |      1     |    1   |  historical  |
-NorESM1-ME    |      1     |    1   |  historical  |
 
 2. List Variables and  Diagnostic packages (KeyWords) here
           |  Benchmark  |  Period | Regional Analysis |   Global Patterns  |             Scoring Metrics                    |
