@@ -2,8 +2,10 @@ config: /home/mapi8461/projects/ILAMB-experiments/2/MsTMIP.cfg
 ilamb_root: /nas/data/ilamb
 model_root: MODELS-by-project/MsTMIP
 build_dir:
+define_regions: above.txt
 regions:
   - global
+  - above
   - bona
   - tena
   - ceam
