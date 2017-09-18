@@ -3,7 +3,7 @@ import os
 import numpy as np
 from ILAMB.Confrontation import Confrontation
 from ILAMB.Variable import Variable
-import ilamblib as il
+from ILAMB.ilamblib import MakeComparable
 
 
 class ConfNEP(Confrontation):
@@ -29,8 +29,8 @@ class ConfNEP(Confrontation):
                                   alt_vars=self.alternate_vars)
         mod.data *= -1.0  # Reverse sign of modified model outputs.
 
-        obs, mod = il.MakeComparable(obs, mod, clip_ref=True,
-                                     logstring="[%s][%s]" %
-                                     (self.longname, m.name))
+        obs, mod = MakeComparable(obs, mod, clip_ref=True,
+                                  logstring="[%s][%s]" %
+                                  (self.longname, m.name))
 
         return obs, mod
