@@ -22,7 +22,6 @@ class ConfNEP(Confrontation):
     def stageData(self, m):
         obs = Variable(filename=self.source,
                        variable_name=self.variable)
-        self._checkRegions(obs)
         obs.data *= -1.0  # Reverse sign of benchmark data.
 
         mod = m.extractTimeSeries(self.variable,
